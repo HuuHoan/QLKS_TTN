@@ -197,10 +197,16 @@
             this.btnTimKiemNV.TabIndex = 15;
             this.btnTimKiemNV.Text = "Tìm Kiếm";
             this.btnTimKiemNV.UseVisualStyleBackColor = true;
+            this.btnTimKiemNV.Click += new System.EventHandler(this.btnTimKiemNV_Click);
             // 
             // cbbTK
             // 
             this.cbbTK.FormattingEnabled = true;
+            this.cbbTK.Items.AddRange(new object[] {
+            "Theo Mã Nhân Viên ",
+            "Theo Tên Nhân Viên ",
+            "Theo Ngày Sinh ",
+            "Theo Điện Thoại"});
             this.cbbTK.Location = new System.Drawing.Point(110, 28);
             this.cbbTK.Name = "cbbTK";
             this.cbbTK.Size = new System.Drawing.Size(121, 21);
@@ -235,6 +241,7 @@
             this.btnRs.TabIndex = 13;
             this.btnRs.Text = "Reset";
             this.btnRs.UseVisualStyleBackColor = true;
+            this.btnRs.Click += new System.EventHandler(this.btnRs_Click);
             // 
             // button5
             // 
@@ -254,6 +261,7 @@
             this.btnXoaNV.TabIndex = 12;
             this.btnXoaNV.Text = "Xóa";
             this.btnXoaNV.UseVisualStyleBackColor = true;
+            this.btnXoaNV.Click += new System.EventHandler(this.btnXoaNV_Click);
             // 
             // btnSuaNV
             // 
@@ -263,6 +271,7 @@
             this.btnSuaNV.TabIndex = 11;
             this.btnSuaNV.Text = "Sửa";
             this.btnSuaNV.UseVisualStyleBackColor = true;
+            this.btnSuaNV.Click += new System.EventHandler(this.btnSuaNV_Click);
             // 
             // btnThemNV
             // 
@@ -272,6 +281,7 @@
             this.btnThemNV.TabIndex = 10;
             this.btnThemNV.Text = "Thêm ";
             this.btnThemNV.UseVisualStyleBackColor = true;
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // groupBox4
             // 
