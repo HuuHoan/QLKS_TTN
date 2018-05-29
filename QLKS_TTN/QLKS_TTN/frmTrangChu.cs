@@ -29,49 +29,49 @@ namespace QLKS_TTN
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
-            frmKhachHang f = new frmKhachHang();
+            frmKhachHang frmkh = new frmKhachHang();
             this.Hide();
-            f.ShowDialog();
+            frmkh.ShowDialog();
             this.Show();
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            frmHoaDon f = new frmHoaDon();
+            frmHoaDon frmhd = new frmHoaDon();
             this.Hide();
-            f.ShowDialog();
+            frmhd.ShowDialog();
             this.Show();
         }
 
         private void btnDichVu_Click(object sender, EventArgs e)
         {
-            frmDichVu f = new frmDichVu();
+            frmDichVu frmdv = new frmDichVu();
             this.Hide();
-            f.ShowDialog();
+            frmdv.ShowDialog();
             this.Show();
         }
 
         private void btnPhong_Click(object sender, EventArgs e)
         {
-            frmPhong f = new frmPhong();
+            frmPhong frmp = new frmPhong();
             this.Hide();
-            f.ShowDialog();
+            frmp.ShowDialog();
             this.Show();
         }
 
         private void btnpDichVu_Click(object sender, EventArgs e)
         {
-            frmPhieuDichVu f = new frmPhieuDichVu();
+            frmPhieuDichVu frmpdv = new frmPhieuDichVu();
             this.Hide();
-            f.ShowDialog();
+            frmpdv.ShowDialog();
             this.Show();
         }
 
         private void btnpDangKy_Click(object sender, EventArgs e)
         {
-            frmPhieuDangKy f = new frmPhieuDangKy();
+            frmPhieuDangKy frmdk = new frmPhieuDangKy();
             this.Hide();
-            f.ShowDialog();
+            frmdk.ShowDialog();
             this.Show();
         }
     }

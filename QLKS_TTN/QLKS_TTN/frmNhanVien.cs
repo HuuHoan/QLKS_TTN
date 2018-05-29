@@ -322,7 +322,7 @@ namespace QLKS_TTN
                 cmd.Connection = con.conn;
 
                 cmd.Parameters.Add("@MANV", SqlDbType.VarChar).Value = txbMaNV.Text;
-                cmd.Parameters.Add("@HOTEN", SqlDbType.NVarChar).Value = txbTenNV.Text;
+                cmd.Parameters.Add("@TENNV", SqlDbType.NVarChar).Value = txbTenNV.Text;
                 if (rdnam.Checked == true)
                 {
                     cmd.Parameters.Add("@GIOITINH", SqlDbType.NVarChar).Value = rdnam.Text;
@@ -364,7 +364,7 @@ namespace QLKS_TTN
                 cmd.CommandText = "ALTER_NHANVIEN";
                 cmd.Connection = con.conn;
                 cmd.Parameters.Add("@MANV", SqlDbType.VarChar).Value = txbMaNV.Text;
-                cmd.Parameters.Add("@HOTEN", SqlDbType.NVarChar).Value = txbTenNV.Text;
+                cmd.Parameters.Add("@TENNV", SqlDbType.NVarChar).Value = txbTenNV.Text;
                 if (rdnam.Checked == true)
                 {
                     cmd.Parameters.Add("@GIOITINH", SqlDbType.NVarChar).Value = rdnam.Text;
@@ -397,7 +397,7 @@ namespace QLKS_TTN
         }
         private void XoaNV()
         {
-            DialogResult dlr = MessageBox.Show("Bạn muốn xóa khách hàng?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = MessageBox.Show("Bạn muốn xóa nhân viên?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 con.OpenConnection();
